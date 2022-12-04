@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+.logo{
+    max-width: 10%;
+    height: auto;
+}
+li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_links{
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #edf0f1;
+}
+.nav_links li a:hover{
+    color: #ff96ad
+}
+button{
+    padding: 9px 25px;
+    background-color: #ff96ad;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+button:hover{
+    border: 2px solid #ff96ad;
+    color: #ff96ad;
+    background-color: black;
+}
+.text{
+    color: #edf0f1;
+    text-align: center;
+    justify-content: space-between;
+}
+span{
+    color:#bff2f5;
+}
+.profile{
+    border: 20px;
+    border-radius: 50%;
+    max-height: max-content;
+    max-width: max-content;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*icons css */
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+/*hover effect icons */
+.fa:hover{
+    opacity: 0.7;
+}
+/*Color for each icon */
+
+/*FB */
+.fa-facebook{
+    background: #3b5998;
+    color: white;
+}
+/*Insta*/
+.fa-instagram{
+    background: #1a1a1a;
+    color: #ff96ad;
+}
+/*About page*/
+div#abtmain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div#abttext{
+    border: 2px solid #ff96ad;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    text-align: justify;
+    font-size: 150%;
+}
+.aboutpic{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border: 2px solid #ff96ad;
+    border-radius: 50%;
+    text-align: center;
+}
+div#abtpic{
+    height: 400px;
+    width: 400px;
+}
+div.container{
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 800px;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin: auto;
+}
+ul.interest{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ff96ad;
+    padding: 25px 25px;
+}
+/*Hobby page*/
+.h1hobbies{
+    color: #0ee;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.abody{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    background: #24252A;
+}
+.box{
+
+    /* */
+    position: relative;
+    height: 300px;
+    width: 200px;
+    transform-style: preserve-3d;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: perspective(1500px) rotateY(0deg)
+    }
+    100%{
+        transform: perspective(1500px) rotateY(360deg)
+    }
+}
+.box div{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--v) * 45deg )) translateZ(300px);
+}
+.box div img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*Goal page*/
+.goalimg{
+    border: 2px solid #ff96ad;
+    border-radius: 20%;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    
+}
+div.goaldiv{
+    justify-content: center;
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+}
+ul.goalul{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 25px;
+}
